@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './components/Home';
+// import Login from './components/Login';
 
 class App extends Component {
   componentDidMount() {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
+        {/* <Login /> */}
       </div>
     );
   }

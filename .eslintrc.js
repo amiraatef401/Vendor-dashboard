@@ -5,4 +5,6 @@ module.exports = {
     "browser": true,
     "jest": true
   },
-};
+  rules:{
+    "linebreak-style": 0
+  }};

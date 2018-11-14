@@ -1,12 +1,14 @@
 import React from 'react';
-import { Icon, Slider } from 'antd';
+import { Icon } from 'antd';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Button from '@material-ui/core/Button';
 import classes from './styles.css';
 import logo from './img/logo.jpg';
-import SignUp from './Signup';
+import SignUp from './SignUpForm';
 
 export default function Home() {
   return (
-    <div>
+    <MuiThemeProvider>
       <div className={classes.headHome}>
         <div>
           <img src={logo} alt="pending" />
@@ -30,10 +32,9 @@ export default function Home() {
             </span>
             Mohamed
           </div>
-
-          <button className={classes.signInBtn} type="submit">
-            Sign In
-          </button>
+          <Button style={{ background: '#d7262c' }} variant="outlined" className={classes.signInBtn}>
+          Sign In
+          </Button>
         </div>
       </div>
 
@@ -55,9 +56,7 @@ export default function Home() {
         <div className={classes.divPhone}> Contact Sales</div>
         <div className={classes.divPhoneNumberIcon}><Icon type="phone" /></div>
         <div className={classes.Number}>201068440487</div>
-        <Slider range defaultValue={[20, 50]} />
-
       </div>
-    </div>
+    </MuiThemeProvider>
   );
 }

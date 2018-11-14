@@ -24,10 +24,9 @@
 }
 
 :local(.signInBtn) {
-     width: 15%;
     border-radius: 6px;
     box-shadow: 0 22px 54px 0 rgba(0, 0, 0, 0.1);
-    background-color: #d7262c;
+    background: #d7262c;
    
   }
   :local(.txtBtn) {
@@ -73,7 +72,6 @@ align-items: center;
 
   }
   :local(.inpt){
-    width:80% ;
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
@@ -114,5 +112,35 @@ background-color: #ffffff;
 :local(.dpdList){
   opacity: 0.29;
   border-radius: 5px;
-  width: 80%
+
+}
+:local(.businessScale){
+  font-family: Graphik;
+  font-size: 14px;
+  color:black;
+  font-weight: bold;
+
+}
+:local(.perDay){
+  font-family: Graphik;
+  font-size: 14px;
+  color: #9b9b9b;
+  font-weight: bold;
+
+}
+:local(.button){
+  border-radius: 21.5px;
+}
+:local(.login){
+  background-color: #ffffff;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+flex: 1;
+}
+:local(.btns){
+  display: flex;
+flex-direction: row;
+justify-content: space-between;;
+  
 }
