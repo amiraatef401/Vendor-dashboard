@@ -12,29 +12,18 @@ import classes from './styles.css';
 
 const validate = (values) => {
   const errors = {};
-  const requiredFields = ['businesName', 'email'];
+  const requiredFields = ['password,matchedPassword'];
   requiredFields.forEach((field) => {
     if (!values[field]) {
       errors[field] = 'Required';
     }
   });
-  if (values.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address';
+  if (values.password === values.matchedPassword) {
+    errors.email = 'passwords not matched';
   }
   return errors;
 };
 const renderTextField = ({
-  input, label, meta: { touched, error }, ...custom
-}) => (
-  <TextField
-    hintText={label}
-    errorText={touched && error}
-    {...input}
-    {...custom}
-    underlineStyle={{ display: 'none' }}
-  />
-);
-const renderTextFieldPassword = ({
   input, label, meta: { touched, error }, ...custom
 }) => (
   <TextField
@@ -46,8 +35,7 @@ const renderTextFieldPassword = ({
     underlineStyle={{ display: 'none' }}
   />
 );
-
-class LoginForm extends React.Component {
+class Setpassword extends React.Component {
   constructor(props) {
     super(props);
 
@@ -67,20 +55,19 @@ class LoginForm extends React.Component {
         <MuiThemeProvider>
           <Card style={{ width: '35%' }}>
             <CardContent>
-              <form onSubmit={handleSubmit} className={classes.formlogin}>
-                <p className={classes.hDSignup}>Back to Business!</p>
+              <form onSubmit={handleSubmit} className={classes.login}>
+                <div className={classes.hDSignup}>
+                  {'Set your new password'}
+                </div>
                 <div className={classes.inpt}>
-                  <Field name="email" component={renderTextField} label="Email" />
+                  <Field name="password" component={renderTextField} label="password" />
+                </div>
+                <div className={[classes.inpt, { backgroundColor: '#9b9b9b' }]}>
+                  <Field name="matchedPassword" component={renderTextField} label="Verify New Password" />
                 </div>
                 <br />
-                <div className={classes.inpt}>
-                  <Field name="password" component={renderTextFieldPassword} label="Password" />
-                </div>
-                <br />
-                <br />
-                <div className={classes.btns}>
-                  <Button size="large" style={{ background: '#d7262c', color: 'white' }} variant="outlined">Sign In</Button>
-                  <a style={{ color: '#959ea9' }} href="www.google.com"> Forgot my password </a>
+                <div>
+                  <Button size="large" style={{ background: '#d7262c', color: 'white' }} variant="outlined">Log in</Button>
                 </div>
               </form>
             </CardContent>
@@ -91,7 +78,7 @@ class LoginForm extends React.Component {
     );
   }
 }
-LoginForm.propTypes = {
+Setpassword.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 };
 renderTextField.propTypes = {
@@ -99,6 +86,6 @@ renderTextField.propTypes = {
 
 };
 export default reduxForm({
-  form: 'LoginForm',
+  form: 'SetpasswordForm',
   validate,
-})(LoginForm);
+})(Setpassword);

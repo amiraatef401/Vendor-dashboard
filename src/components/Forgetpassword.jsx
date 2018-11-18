@@ -12,7 +12,7 @@ import classes from './styles.css';
 
 const validate = (values) => {
   const errors = {};
-  const requiredFields = ['businesName', 'email'];
+  const requiredFields = ['email'];
   requiredFields.forEach((field) => {
     if (!values[field]) {
       errors[field] = 'Required';
@@ -34,20 +34,7 @@ const renderTextField = ({
     underlineStyle={{ display: 'none' }}
   />
 );
-const renderTextFieldPassword = ({
-  input, label, meta: { touched, error }, ...custom
-}) => (
-  <TextField
-    type="password"
-    hintText={label}
-    errorText={touched && error}
-    {...input}
-    {...custom}
-    underlineStyle={{ display: 'none' }}
-  />
-);
-
-class LoginForm extends React.Component {
+class Resetpassword extends React.Component {
   constructor(props) {
     super(props);
 
@@ -67,20 +54,20 @@ class LoginForm extends React.Component {
         <MuiThemeProvider>
           <Card style={{ width: '35%' }}>
             <CardContent>
-              <form onSubmit={handleSubmit} className={classes.formlogin}>
-                <p className={classes.hDSignup}>Back to Business!</p>
+              <form onSubmit={handleSubmit} className={classes.Forgetpass}>
+                <div className={classes.hDSignup}>
+                  <div style={{ color: 'gray', fontWeight: 'bold', fontSize: '20px' }}> &lt;&nbsp;&nbsp; </div>
+                  {'Reset my Password'}
+                </div>
+                <p style={{ fontSize: '14px' }}>
+                  {'Please enter your email address, And we will send you a reset link to in an email'}
+                </p>
                 <div className={classes.inpt}>
                   <Field name="email" component={renderTextField} label="Email" />
                 </div>
                 <br />
-                <div className={classes.inpt}>
-                  <Field name="password" component={renderTextFieldPassword} label="Password" />
-                </div>
-                <br />
-                <br />
-                <div className={classes.btns}>
-                  <Button size="large" style={{ background: '#d7262c', color: 'white' }} variant="outlined">Sign In</Button>
-                  <a style={{ color: '#959ea9' }} href="www.google.com"> Forgot my password </a>
+                <div>
+                  <Button size="large" style={{ background: '#d7262c', color: 'white' }} variant="outlined">Submit</Button>
                 </div>
               </form>
             </CardContent>
@@ -91,7 +78,7 @@ class LoginForm extends React.Component {
     );
   }
 }
-LoginForm.propTypes = {
+Resetpassword.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 };
 renderTextField.propTypes = {
@@ -99,6 +86,6 @@ renderTextField.propTypes = {
 
 };
 export default reduxForm({
-  form: 'LoginForm',
+  form: 'ResetpasswordForm',
   validate,
-})(LoginForm);
+})(Resetpassword);
