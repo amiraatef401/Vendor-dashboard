@@ -1,0 +1,16 @@
+.sideMenuInitial{
+width: 15.4%;
+height: 100vh;
+top: 0;
+left:0;
+box-shadow: 0 22px 54px 0 rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+}
+.homeHeaderInitial{
+height: 9.4%;
+left:0;
+width: 100%;
+top: 0;
+box-shadow: 0 1px 0 0 #c7cfd8;
+background-color: #a13a3a;
+}
