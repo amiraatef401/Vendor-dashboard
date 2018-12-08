@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Graphik-Medium'; 
+  
+     src: url('../../fonts/Graphik-500-Medium.otf'); /*IE9 Compat Modes */
+     src: local('Graphik-Medium'), local('Graphik-Medium'), 
+       /* Modern Browsers */
+     url('../../fonts/Graphik-500-Medium.otf') format('truetype'),/* Safari, Android, iOS */
+   } 
+   @font-face {
+    font-family: 'Graphik-Regular';
+  
+    src: url('../../fonts/Graphik-400-Regular.otf'); /* IE9 Compat Modes */
+    src: local('Graphik-Regular'), local('Graphik-Regular'),
+       /* Modern Browsers */
+         url('../../fonts/Graphik-400-Regular.otf') format('truetype'), /* Safari, Android, iOS */
+  }
+.sideMenuInitial{
+    position: absolute;
+width: 15.4%;
+height: 100%;
+top: 0;
+left:0;
+box-shadow: 0 22px 54px 0 rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+}
+.homeHeaderInitial{
+    position: absolute;
+height: 9.4%;
+left:15.4%;
+width: 84.6%;
+top: 0;
+box-shadow: 0 1px 0 0 rgba(155, 155, 155, 0.5);
+background-color: #ffffff;
+
+}
+.contaningContent{
+    position: absolute;
+    width: 84.6%;
+    height: 100%;
+    top: 9.4%;
+    left: 15.4%;
+
+}
+.collapseArrow{
+    position: absolute;
+    height: 30.2%;
+    width:2.4% ;
+    top: 34.3%;
+    left:2.8% ;
+    object-fit: contain;
+
+}
+.newDeliveryBtn{
+    position: absolute;
+    height: 50%;
+    width:14.4% ;
+    top: 25%;
+    left:8.5% ;
+    border-radius: 5px;
+    background-color:#d7262c;
+    font-family: "Graphik-Medium";
+    font-size: 1.11vw;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.logoHome{
+    position: absolute;
+
+    top: 30.2%;
+    left: 47.1%;
+    width: 5.8%;
+    height: 39.6%;
+}
+.divBusiness{
+    position: absolute;
+    top:1.8%;
+    left: 8.1%;
+width: 84.8%;
+height: 6.3%;
+    border-radius: 6px;
+    background-color:#f3f5f7;
+ }
+ .businessName{
+    position: absolute;
+top:30.7%;
+left:30.6%;
+width: 23.7%;
+height: 25%;
+font-family: "Graphik-Medium";
+font-size: 1.11vw;
+font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: black;
+ }
+.sideBarRoute{
+    position: absolute;
+    top: 12.9%;
+    left: 28.4%;
+    width:63.5%;
+    height: 1.6%;
+    font-family: "Graphik-Medium";
+  font-size: 1.11vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: black;
+}
+
+.sideBarImg{
+    position: absolute;
+    width: 13.1%;
+    height: 2.8%;
+    left: 8.1%;
+    top: 12.7%;
+    object-fit: contain;
+}
+.secondLine{
+      height: .2%;
+    top: 40.7%
+}
+.line{
+    position: absolute;
+top: 18.5%;
+left:9.9%;
+width: 80.2%;
+height: .1%;
+background-color:#c7cfd8;
+}
+.pickupImg{
+    top: 22%;
+    font-family: "Graphik-Regular";
+    color: #4a4a4a;
+}
+.deliveryImg{
+    top: 28.2%;
+    font-family: "Graphik-Regular";
+    color: #4a4a4a;
+}
+.returnsImg{
+  top: 34.5%;
+  font-family: "Graphik-Regular";
+  color: #4a4a4a;
+}
+.codImg{
+top: 44.2%;
+font-family: "Graphik-Regular";
+color: #4a4a4a;
+}
+.billImg{
+    top: 50.5%;
+    font-family: "Graphik-Regular";
+    color: #4a4a4a;
+
+}
+.inventoryImg{
+    top:75.7%;
+    font-family: "Graphik-Regular";
+    color: #4a4a4a;
+}
+.suppliesImg{
+ top:87.8%;
+ font-family: "Graphik-Regular";
+ color:#d7262c;
+}
+.reportsImg{
+    top: 81.8%;
+    font-family: "Graphik-Regular";
+    color: #4a4a4a;
+}
+.settingsImg{
+   top: 95.2%;
+   font-family: "Graphik-Regular";
+   color: #4a4a4a;
+}
+

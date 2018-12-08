@@ -7,5 +7,5 @@ module.exports = {
     "jest": true
   },
   rules:{
-    "linebreak-style": 0
+    "linebreak-style": 0,
     }};

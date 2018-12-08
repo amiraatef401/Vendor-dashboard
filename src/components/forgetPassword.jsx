@@ -4,7 +4,7 @@ import '../styles/introScreens/commonIUiIntro.css';
 import '../styles/introScreens/forgetPassword.css';
 import Axios from 'axios';
 import { CommonIntroUI } from './index';
-import lefrArrow from './img/left.png';
+import leftArrow from './img/singleleft.png';
 
 export default class ForgetPassword extends React.Component {
   constructor() {
@@ -48,7 +48,7 @@ export default class ForgetPassword extends React.Component {
             <div className="displayRow">
 
               <NavLink to="/login">
-                <img src={lefrArrow} alt="pending" className="leftArrow" />
+                <img src={leftArrow} alt="pending" className="leftArrow" />
               </NavLink>
               <span>Reset my Password</span>
             </div>
