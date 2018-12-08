@@ -15,59 +15,83 @@
          url('../../fonts/Graphik-500-Medium.otf') format('truetype'), /* Safari, Android, iOS */
   } 
   
-  
-  .logo{
-    position: absolute;
-    left: 45.85%;
-    margin-top: 5vh;
-    width: 8.3%;
-    height: 6.3%;
-  }
-  .backGroundUp{
-    position: absolute;
-              width: 100%;
-              height: 50%;
-              left: 0;
-              top: 0;
-              background-color: #ffffff;
-  }
-  .backGroundDown{
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    left: 0;
-    top: 50%;
-    background-color: #f3f5f7;
-  }
-  .introForm{
-    position: absolute;
-    width: 39.6%;
-    height: 45.3%;
-    top: 27.3%;
-    left: 30.2%;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    box-shadow: 0 10px 54px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffffff
-  }
-  .signInBtn{
-    position: absolute;
-    left: 22.3%;
-    top: 69%;
-    width: 27%;
-    height: 9.7%;
-    border-radius: 5px;
-    background-color: #d7262c;
-    border: none;
-    font-family: 'Graphik-Medium';
-    font-size:  0.97vw;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    border: none;
-  }
+.loginFormHeader{
+  position: absolute;
+top: 21.6%;
+left: 22.3%;
+width: 34.9%;
+height: 5.2%;
+  font-family: 'Graphik-Medium';
+  font-size: 1.67vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+}
+
+.emailInputLogin{
+  position: absolute;
+top: 36.4%;
+left: 22.3%;
+  width: 55.6%;
+  height: 9.3%;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+padding-left: 6%;
+font-size: 0.97vw;
+font-family: 'Graphik-Regular';
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #000000;
+outline: none;
+box-sizing: border-box;
+flex-shrink: 0;
+border:none;
+}
+.passwordInputLogin{
+  position: absolute;
+  top: 50%;
+  left: 22.3%;
+  width: 55.6%;
+  height: 9.3%;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+padding-left: 6%;
+font-size: 0.97vw;
+font-family: 'Graphik-Regular';
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #000000;
+outline: none;
+box-sizing: border-box;
+flex-shrink: 0;
+border:none;
+}
+.navLink{
+  position: absolute;
+  top: 72.4%;
+  left: 54.2%;
+  width: 23.3%;
+  height: 3%;
+  width: 135px;
+  height: 14px;
+  font-family: "Graphik-Regular";
+  font-size:0.97vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color:#959ea9;
+
+}
