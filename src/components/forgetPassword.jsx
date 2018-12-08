@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../Styles/introScreens/commonIUiIntro.css';
-import '../Styles/introScreens/forgetPassword.css';
+import '../styles/introScreens/commonIUiIntro.css';
+import '../styles/introScreens/forgetPassword.css';
 import Axios from 'axios';
 import { CommonIntroUI } from './index';
 import lefrArrow from './img/left.png';

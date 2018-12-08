@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Styles/introScreens/commonIUiIntro.css';
+import '../styles/introScreens/commonIUiIntro.css';
 import logo from './img/logo.jpg';
 
 function CommonIntroUi(props) {

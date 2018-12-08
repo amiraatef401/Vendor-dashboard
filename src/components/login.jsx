@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import request from 'request';
 // import axios from 'axios';
 import { CommonIntroUI } from './index';
-import '../Styles/introScreens/login.css';
-import '../Styles/introScreens/commonIUiIntro.css';
+import '../styles/introScreens/login.css';
+import '../styles/introScreens/commonIUiIntro.css';
 
 export default class Login extends React.Component {
   constructor() {
