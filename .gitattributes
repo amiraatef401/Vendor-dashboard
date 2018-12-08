@@ -1,4 +1,0 @@
-# -*.otf filter=lfs diff=lfs merge=lfs -text
-# -*.css filter=lfs diff=lfs merge=lfs -text
-# src/styles/introScreens/forgetPassword.css
-# git[[:space:]]lfs[[:space:]]track[[:space:]]src/styles/introScreens/forgetPassword.css filter=lfs diff=lfs merge=lfs -text
