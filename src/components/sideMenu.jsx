@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
 import '../styles/homeScreens/commonUiHomeScreens.css';
-// import { Today } from './index';
-// import homebg from './img/homebg.png';
 import PropTypes from 'prop-types';
 
 import leftArrow from './img/doubleleft.png';
